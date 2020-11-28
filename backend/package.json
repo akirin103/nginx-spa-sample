@@ -1,0 +1,13 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "nginx-spa-sample backend",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "author": "akirin103",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -12,3 +12,13 @@ Nginxを使用したSPAの配信基盤のサンプル
 ## frontend
 フレームワークに`react.js`を採用。
 
+### Backendの動作確認
+- `/`
+```
+$ curl http://localhost:3000
+```
+
+- `/items`
+```
+$ curl http://localhost:3000/items
+```
