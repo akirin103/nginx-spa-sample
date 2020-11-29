@@ -1,0 +1,39 @@
+.vertical-table {
+  border: 1px solid #ddd;
+  width: 500px;
+}
+
+.vertical-table__inner {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+}
+
+.vertical-table__header-row {
+  background-color: #efefef;
+}
+
+.vertical-table__header {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.vertical-table__header-no {
+  width: 20%;
+}
+
+.vertical-table__text {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.vertical-table__header:last-child,
+.vertical-table__text:last-child {
+  border-right-width: 0;
+}
