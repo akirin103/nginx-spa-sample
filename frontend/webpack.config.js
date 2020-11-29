@@ -35,6 +35,16 @@ module.exports = {
             plugins: ['@babel/plugin-syntax-jsx'] //JSXパース用
           }
         }
+      },
+      {
+        test: /\.css/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: { url: false }
+          }
+        ]
       }
     ]
   },
