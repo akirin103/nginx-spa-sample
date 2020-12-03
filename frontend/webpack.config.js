@@ -18,7 +18,8 @@ module.exports = {
   // 実行時にブラウザが自動的に localhost を開く
   devServer: {
     contentBase: 'dist',
-    open: true
+    open: true,
+    port: 8080,
   },
   module: {
     rules: [
