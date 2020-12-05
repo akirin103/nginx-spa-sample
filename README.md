@@ -15,10 +15,10 @@ Nginxを使用したSPAの配信基盤のサンプル
 ### Backendの動作確認
 - `/`
 ```
-$ curl http://localhost:3000
+$ curl http://localhost:8000
 ```
 
 - `/items`
 ```
-$ curl http://localhost:3000/items
+$ curl http://localhost:8000/items
 ```
