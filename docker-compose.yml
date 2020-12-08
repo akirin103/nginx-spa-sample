@@ -1,8 +1,20 @@
 version: '3'
 services:
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: dockerfiles/app/Dockerfile
     ports:
       - '8000:8000'
     volumes:
-      - ./backend:/usr/src/app
+      - ./backend:/usr/app
+
+  nginx:
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx/Dockerfile
+    ports:
+      - '8080:80'
+    # environment:
+    #  - NGINX_HOST=foobar.com
+    #  - NGINX_PORT=80
